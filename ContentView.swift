@@ -20,6 +20,12 @@
  빈 문자열이나 배열 등을 검사할 때도 명확하게 0인지를 검사해야함.
  if 변수.isEmpty { ... }
  switch문은 다른 언어들과 다르게 같은지만 검사하는 것이 아닌, 패턴 매칭이 가능함.
+ 
+ 반복문은 for, while을 사용한다.
+ for문은 for 변수 in { ... } 을 사용한다.
+ +) 단순한 배열을 사용하고 싶을때는 변수_를 사용해도 괜찮다.
+ +)) for _ in 0..<100에서 "0..<100"은 0부터 99까지 반복이란 뜻
+ while문은 다른 언어들과 똑같이 true일때 계속 반복됨.
 */
 
 import SwiftUI
@@ -27,25 +33,25 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            let texts: String = "Hello world !"
-            let lang : [String] = ["swift"]
-            let capital : [String : String] = ["Korea" : "Seoul"]
-            let student = "고등학생"
-            let age : Int = 19
-            
-            switch age {
-            case 8..<14:
-                Text("초등학생")
-            default:
-                Text("고등학생")
-            }
-            
-            switch student {
-            case "고등학생":
-                Text("성홍제")
-            default:
-                Text("박성민")
-            }
+//            let texts: String = "Hello world !"
+//            let lang : [String] = ["swift"]
+//            let capital : [String : String] = ["Korea" : "Seoul"]
+//            let student = "고등학생"
+//            let age : Int = 19
+//            
+//            switch age {
+//            case 8..<14:
+//                Text("초등학생")
+//            default:
+//                Text("고등학생")
+//            }
+//            
+//            switch student {
+//            case "고등학생":
+//                Text("성홍제")
+//            default:
+//                Text("박성민")
+//            }
         }
     }
 }
